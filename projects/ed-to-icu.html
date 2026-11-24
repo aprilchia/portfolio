@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Project overview: emergency department to intensive care escalation modeling using MIMIC-IV data.">
+  <title>ED-to-ICU Escalation Modeling | April Chia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="../index.html" aria-label="April Chia home">AC<span>.</span></a>
+    <nav class="primary-nav project-nav" aria-label="Project navigation">
+      <a href="../index.html#projects">← All projects</a>
+      <a href="https://github.com/tkbarb10/ADS599-Capstone" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="section-wrap hero project-hero">
+      <p class="eyebrow">PROJECT OVERVIEW · HEALTHCARE ANALYTICS</p>
+      <h1>ED-to-ICU<br><em>Escalation Modeling.</em></h1>
+      <p class="hero-copy">An applied data science capstone exploring emergency department patient trajectories and the transition to intensive care.</p>
+      <div class="hero-note"><span>ACADEMIC PROJECT</span><span>MIMIC-IV · 2008–2019</span></div>
+    </section>
+    <section class="section-wrap section-block project-content">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 — THE QUESTION</p><h2>Understanding<br>escalation<span class="period">.</span></h2></div>
+        <p class="section-intro">How can patient information available during an emergency department visit help characterize the risk and timing of subsequent ICU escalation?</p>
+      </div>
+      <div class="about-grid">
+        <div>
+          <h3>Project context</h3>
+          <p>The emergency department is a dynamic environment where clinicians make decisions with incomplete and evolving information. This project examines ED-to-ICU transitions as both a prediction problem and a sequential decision-making problem.</p>
+        </div>
+        <div>
+          <h3>Data source</h3>
+          <p>The analysis uses the MIMIC-IV dataset, a de-identified electronic health record resource. ED and hospital data were prepared to represent patient visits and relevant events over time, with attention to temporal integrity and the information available at each decision point.</p>
+        </div>
+      </div>
+    </section>
+    <section class="about-section">
+      <div class="section-wrap">
+        <p class="eyebrow">02 — APPROACH</p>
+        <h2>From snapshots<br>to <em>sequences.</em></h2>
+        <div class="skills-grid project-steps">
+          <div class="skill-group"><span class="skill-number">01</span><h3>Data preparation</h3><p>Construct ED visit cohorts, assess data quality, and prepare time-aware clinical features.</p></div>
+          <div class="skill-group"><span class="skill-number">02</span><h3>Predictive modeling</h3><p>Develop supervised models to examine ED disposition and escalation-related outcomes.</p></div>
+          <div class="skill-group"><span class="skill-number">03</span><h3>Sequential modeling</h3><p>Represent patient stays as event-driven sequences to study how risk information changes over time.</p></div>
+          <div class="skill-group"><span class="skill-number">04</span><h3>Policy evaluation</h3><p>Explore offline reinforcement learning policies and evaluate their behavior in the context of escalation decisions.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-wrap section-block">
+      <p class="eyebrow">03 — TOOLS & METHODS</p>
+      <h2>Technical focus<span class="period">.</span></h2>
+      <ul class="tag-list project-tags">
+        <li>Python</li><li>SQL</li><li>MIMIC-IV</li><li>Data Engineering</li><li>EDA</li><li>Scikit-learn</li><li>Classification</li><li>LSTM</li><li>Offline RL</li><li>Model Evaluation</li>
+      </ul>
+      <div class="project-disclaimer">
+        <h3>Scope and limitations</h3>
+        <p>This is an academic research project using retrospective, de-identified data. It is not a clinically validated tool, does not provide medical advice, and should not be used to guide patient care. Model outputs and policy evaluations are exploratory and require further validation before any real-world application.</p>
+      </div>
+      <a class="button button-dark" href="https://github.com/tkbarb10/ADS599-Capstone" target="_blank" rel="noreferrer">View project repository <span aria-hidden="true">↗</span></a>
+      <p class="small-note"><a href="../index.html">← Return to portfolio</a></p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="wordmark" href="../index.html">AC<span>.</span></a>
+    <p>© <span id="year">2026</span> April Chia</p>
+    <a href="#">Back to top ↑</a>
+  </footer>
+  <script src="../script.js" defer></script>
+</body>
+</html>
